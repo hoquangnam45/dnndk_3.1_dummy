@@ -1,25 +1,25 @@
 #!/bin/bash
-cd ./host_x86/models/caffe/inception_v1
+cd ./models/caffe/inception_v1
 cat float.caffemodela* >> float.caffemodel
 rm float.caffemodela*
 ls
-cd ./host_x86/models/caffe/resnet50
+cd ./models/caffe/resnet50
 cat float.caffemodela* >> float.caffemodel
 rm float.caffemodela*
 ls
-cd ./host_x86/decent-tf/ubuntu14.04/
+cd ./decent-tf/ubuntu14.04/
 cat tensorflow_gpu-1.12.0-cp27-cp27mu-linux_x86_64.whla* >> tensorflow_gpu-1.12.0-cp27-cp27mu-linux_x86_64.whl
 cat tensorflow_gpu-1.12.0-cp36-cp36m-linux_x86_64.whla* >> tensorflow_gpu-1.12.0-cp36-cp36m-linux_x86_64.whl
 rm tensorflow_gpu-1.12.0-cp27-cp27mu-linux_x86_64.whla*
 rm tensorflow_gpu-1.12.0-cp36-cp36m-linux_x86_64.whla*
 ls
-cd ./host_x86/decent-tf/ubuntu16.04/
+cd ./decent-tf/ubuntu16.04/
 cat tensorflow_gpu-1.12.0-cp27-cp27mu-linux_x86_64.whla* >> tensorflow_gpu-1.12.0-cp27-cp27mu-linux_x86_64.whl
 cat tensorflow_gpu-1.12.0-cp36-cp36m-linux_x86_64.whla* >> tensorflow_gpu-1.12.0-cp36-cp36m-linux_x86_64.whl
 rm tensorflow_gpu-1.12.0-cp27-cp27mu-linux_x86_64.whla*
 rm tensorflow_gpu-1.12.0-cp36-cp36m-linux_x86_64.whla*
 ls
-cd ./host_x86/decent-tf/ubuntu18.04/
+cd ./decent-tf/ubuntu18.04/
 cat tensorflow_gpu-1.12.0-cp27-cp27mu-linux_x86_64.whla* >> tensorflow_gpu-1.12.0-cp27-cp27mu-linux_x86_64.whl
 cat tensorflow_gpu-1.12.0-cp36-cp36m-linux_x86_64.whla* >> tensorflow_gpu-1.12.0-cp36-cp36m-linux_x86_64.whl
 rm tensorflow_gpu-1.12.0-cp27-cp27mu-linux_x86_64.whla*
