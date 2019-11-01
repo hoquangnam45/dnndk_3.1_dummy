@@ -1,6 +1,7 @@
 #!/bin/bash
 current_dir=`pwd`
 echo $current_dir
+cd $current_dir
 cd ./models/caffe/inception_v1
 cat float.caffemodela* >> float.caffemodel
 rm float.caffemodela*
