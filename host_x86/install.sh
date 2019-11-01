@@ -1,4 +1,5 @@
 #!/bin/bash
+pwd
 cd ./models/caffe/inception_v1
 cat float.caffemodela* >> float.caffemodel
 rm float.caffemodela*
