@@ -32,6 +32,7 @@ cat tensorflow_gpu-1.12.0-cp36-cp36m-linux_x86_64.whla* >> tensorflow_gpu-1.12.0
 rm tensorflow_gpu-1.12.0-cp27-cp27mu-linux_x86_64.whla*
 rm tensorflow_gpu-1.12.0-cp36-cp36m-linux_x86_64.whla*
 ls
+cd $current_dir
 
 board_name=$1
 DNNDK_VERSION="DNNDK_VERSION=3.1"
