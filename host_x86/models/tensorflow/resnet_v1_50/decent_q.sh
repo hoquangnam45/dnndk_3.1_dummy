@@ -1,0 +1,10 @@
+decent_q quantize \
+  --input_frozen_graph frozen_resnet_v1_50.pb \
+  --input_nodes input \
+  --input_shapes ?,224,224,3 \
+  --output_nodes resnet_v1_50/predictions/Reshape_1 \
+  --input_fn resnet_v1_50_input_fn.calib_input \
+  --method 1 \
+  --gpu 0 \
+  --calib_iter 10 \
+  --output_dir ./quantize_results \
