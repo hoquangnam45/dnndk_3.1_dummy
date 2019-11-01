@@ -1,4 +1,30 @@
 #!/bin/bash
+cd ./host_x86/models/caffe/inception_v1
+cat float.caffemodela* >> float.caffemodel
+rm float.caffemodela*
+ls
+cd ./host_x86/models/caffe/resnet50
+cat float.caffemodela* >> float.caffemodel
+rm float.caffemodela*
+ls
+cd ./host_x86/decent-tf/ubuntu14.04/
+cat tensorflow_gpu-1.12.0-cp27-cp27mu-linux_x86_64.whla* >> tensorflow_gpu-1.12.0-cp27-cp27mu-linux_x86_64.whl
+cat tensorflow_gpu-1.12.0-cp36-cp36m-linux_x86_64.whla* >> tensorflow_gpu-1.12.0-cp36-cp36m-linux_x86_64.whl
+rm tensorflow_gpu-1.12.0-cp27-cp27mu-linux_x86_64.whla*
+rm tensorflow_gpu-1.12.0-cp36-cp36m-linux_x86_64.whla*
+ls
+cd ./host_x86/decent-tf/ubuntu16.04/
+cat tensorflow_gpu-1.12.0-cp27-cp27mu-linux_x86_64.whla* >> tensorflow_gpu-1.12.0-cp27-cp27mu-linux_x86_64.whl
+cat tensorflow_gpu-1.12.0-cp36-cp36m-linux_x86_64.whla* >> tensorflow_gpu-1.12.0-cp36-cp36m-linux_x86_64.whl
+rm tensorflow_gpu-1.12.0-cp27-cp27mu-linux_x86_64.whla*
+rm tensorflow_gpu-1.12.0-cp36-cp36m-linux_x86_64.whla*
+ls
+cd ./host_x86/decent-tf/ubuntu18.04/
+cat tensorflow_gpu-1.12.0-cp27-cp27mu-linux_x86_64.whla* >> tensorflow_gpu-1.12.0-cp27-cp27mu-linux_x86_64.whl
+cat tensorflow_gpu-1.12.0-cp36-cp36m-linux_x86_64.whla* >> tensorflow_gpu-1.12.0-cp36-cp36m-linux_x86_64.whl
+rm tensorflow_gpu-1.12.0-cp27-cp27mu-linux_x86_64.whla*
+rm tensorflow_gpu-1.12.0-cp36-cp36m-linux_x86_64.whla*
+ls
 
 board_name=$1
 DNNDK_VERSION="DNNDK_VERSION=3.1"
@@ -52,7 +78,8 @@ sysver=`echo $sysver | awk '{print $3}' | awk -F'.' '{print $1"."$2}' `
 echo $sysver
 
 cuda_verfile="/usr/local/cuda/version.txt"
-cudnn_verfile="/usr/local/cuda/include/cudnn.h"
+#cudnn_verfile="/usr/local/cuda/include/cudnn.h"
+cudnn_verfile="/usr/include/cudnn.h"
 cuda_ver=
 cudnn_ver=
 
